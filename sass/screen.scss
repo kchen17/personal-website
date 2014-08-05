@@ -1,0 +1,170 @@
+@import "compass/reset";
+@import "variables";
+@import "breakpoint";
+@import "compass";
+@import "../jeet/index";
+
+
+@mixin boxes($colfrac, $pd) {
+  @include span($colfrac);
+  @include box-sizing(border-box);
+  padding: $pd;
+}
+
+@mixin font($ff, $sz, $c) {
+  font-family: $ff;
+  font-size: $sz;
+  color: $c;
+}
+
+@mixin rotate($deg) {
+  @include edit();
+  transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+}
+
+#side {
+  @include font($panel-font, 2em, $gray);
+  @include cf();
+  @include box-sizing(border-box);
+  display: table;
+  margin: 0 auto; 
+  background-image: url('../images/tree.jpg');
+  background-position: center top;
+  background-size: cover;
+  z-index: 600;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  overflow-x: hidden;
+  .about {
+    margin-top: 40px;
+    margin-left: 30px;
+    @include rotate(10deg);
+  }
+  .projects {
+    margin-top: 20px;
+    @include rotate(-10deg);
+  }
+  .resume {
+    margin-top: 70px;
+    margin-left: 75px;
+    @include rotate(25deg);
+  }
+  .contact {
+    margin-top: 180px;
+    margin-left: 65px;
+    @include rotate(-80deg);
+  }
+  #panel {
+    @include box-sizing(border-box);
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    line-height: 110%; 
+    h2 {
+      @include font($panel-font, 0.6em, $gray);
+      display: none;
+    }
+    a.menu {
+      //text-shadow: 3px 1px white;
+      font-weight: bold;
+    }
+    a.menu:link, a.menu:visited {
+      text-decoration: none;
+      color: $link;
+    }
+    a.menu:hover {
+      color: $link-hover;
+    }
+  }
+  @include breakpoint($breakpoint-medium-width) {
+    @include boxes(1/1, 10px);
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul {
+      position: absolute;
+      visibility: hidden;
+      background-color: white;
+      opacity: 0.8;
+      width: 100%;
+    }
+    .out {
+      visibility: visible;
+    }
+    .about, .projects, .resume, .contact {
+      float: none;
+      display: default;
+      @include rotate(0deg);
+      margin: 0; 
+      width: 100%;
+      text-align: center;
+      @include font($panel-font, 0.4em, $gray);
+      a:link, a:visited {
+        color: white;
+      }
+      a:hover {
+        background-color: white;
+      }
+    }
+    #panel {
+      h2 {
+        text-align: center;
+        display: inherit;
+        z-index: 999;
+        height: 5%;
+        width: 100%;
+        padding: 0px;
+        margin-top: 0px;
+        background-color: $link;
+        opacity: 0.8;
+        a {
+          text-decoration: none;
+        }
+        a:link, a:visited {
+          color: #3F3F3F;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  position: relative; 
+  @include boxes(4/5, 0px);
+  @include breakpoint($breakpoint-medium-width) {
+    @include boxes(1/1, 10px);
+  }
+}
+
+table {
+  @include center();
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+dl {
+  @include font($body-font, 0.8em, $gray);
+  text-align: justify;
+  line-height: 150%;
+  margin: -20px 20px 40px 0px;
+  padding: 30px;
+}
+
+h2 {
+  @include font($header-font, 2em, $link);
+  font-weight: bold;
+  padding: 40px 30px 0 30px;
+}

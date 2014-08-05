@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+#side {
+  font-family: "Antic Slab", "Georgia", serif;
+  font-size: 2em;
+  color: #a2a9af;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  background-image: url("../images/tree.jpg");
+  background-position: center top;
+  background-size: cover;
+  z-index: 600;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  overflow-x: hidden;
+}
+#side:before, #side:after {
+  content: '';
+  display: table;
+}
+#side:after {
+  clear: both;
+}
+#side .about {
+  margin-top: 40px;
+  margin-left: 30px;
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+}
+#side .about * {
+  background: rgba(0, 0, 0, 0.05);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+}
+#side .projects {
+  margin-top: 20px;
+  transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+}
+#side .projects * {
+  background: rgba(0, 0, 0, 0.05);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+}
+#side .resume {
+  margin-top: 70px;
+  margin-left: 75px;
+  transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+}
+#side .resume * {
+  background: rgba(0, 0, 0, 0.05);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+}
+#side .contact {
+  margin-top: 180px;
+  margin-left: 65px;
+  transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+}
+#side .contact * {
+  background: rgba(0, 0, 0, 0.05);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+}
+#side #panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  line-height: 110%;
+}
+#side #panel h2 {
+  font-family: "Antic Slab", "Georgia", serif;
+  font-size: 0.6em;
+  color: #a2a9af;
+  display: none;
+}
+#side #panel a.menu {
+  font-weight: bold;
+}
+#side #panel a.menu:link, #side #panel a.menu:visited {
+  text-decoration: none;
+  color: #6699cc;
+}
+#side #panel a.menu:hover {
+  color: #c3e4ed;
+}
+@media (max-width: 768px) {
+  #side {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #side:before, #side:after {
+    content: '';
+    display: table;
+  }
+  #side:after {
+    clear: both;
+  }
+  #side ul {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+  }
+  #side .out {
+    visibility: visible;
+  }
+  #side .about, #side .projects, #side .resume, #side .contact {
+    float: none;
+    display: default;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Antic Slab", "Georgia", serif;
+    font-size: 0.4em;
+    color: #a2a9af;
+  }
+  #side .about *, #side .projects *, #side .resume *, #side .contact * {
+    background: rgba(0, 0, 0, 0.05);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+  }
+  #side .about a:link, #side .about a:visited, #side .projects a:link, #side .projects a:visited, #side .resume a:link, #side .resume a:visited, #side .contact a:link, #side .contact a:visited {
+    color: white;
+  }
+  #side .about a:hover, #side .projects a:hover, #side .resume a:hover, #side .contact a:hover {
+    background-color: white;
+  }
+  #side #panel h2 {
+    text-align: center;
+    display: inherit;
+    z-index: 999;
+    height: 5%;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: #6699cc;
+    opacity: 0.8;
+  }
+  #side #panel h2 a {
+    text-decoration: none;
+  }
+  #side #panel h2 a:link, #side #panel h2 a:visited {
+    color: #3F3F3F;
+  }
+  #side #panel h2 a:hover {
+    color: white;
+  }
+}
+
+#container {
+  position: relative;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+}
+#container:before, #container:after {
+  content: '';
+  display: table;
+}
+#container:after {
+  clear: both;
+}
+@media (max-width: 768px) {
+  #container {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  #container:before, #container:after {
+    content: '';
+    display: table;
+  }
+  #container:after {
+    clear: both;
+  }
+}
+
+table {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+table:before, table:after {
+  content: '';
+  display: table;
+}
+table:after {
+  clear: both;
+}
+
+dl {
+  font-family: "Muli", "Trebuchet MS";
+  font-size: 0.8em;
+  color: #a2a9af;
+  text-align: justify;
+  line-height: 150%;
+  margin: -20px 20px 40px 0px;
+  padding: 30px;
+}
+
+h2 {
+  font-family: "Dawning of a New Day", "Garamond";
+  font-size: 2em;
+  color: #6699cc;
+  font-weight: bold;
+  padding: 40px 30px 0 30px;
+}

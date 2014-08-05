@@ -1,0 +1,88 @@
+doctype html
+html 
+	head
+		link(href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css')
+		link(rel='stylesheet' href='vendors/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet' href='stylesheets/screen.css')
+		//meta(http-equiv="refresh" content="5")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		
+		title Kathleen Chen
+	body
+		.pull-left#side
+			// links here
+			.naver-container#panel
+				h2
+					a(href="#") NAVIGATION
+				ul 
+					- var tags = ["about", "projects", "resume", "contact"];
+					- each tag, id in tags
+						- var idtag = "#" + tag;
+						li(class=tag): a.menu(href=idtag) #{tag}
+
+		.pull-right#container 
+			table(class="table table-striped center-block")
+				tbody
+					tr#about 
+						td 
+							h2 Kathleen Chen
+							dl 
+								dt 
+								| Why must they do that kick up litter or burrow under covers, 
+								| or leave hair everywhere, so attack feet. Hunt anything that moves. 
+								| Intently sniff hand chew iPad power cord, but leave dead animals as gifts. 
+								| Attack feet need to chase tail, and all of a sudden cat goes crazy, and stand in front of 
+								| the computer screen claw drapes. Why must they do that why must they do that, or chew foot, for hide 
+								| when guests come over. Rub face on everything favor packaging over toy, sleep on keyboard, for throwup 
+								| on your pillow. Sleep on keyboard use lap as chair always hungry or why must they do that, intrigued by the shower sun bathe. 
+					tr#projects
+						td 
+							h2 Projects
+							dl 
+								dt Project 1 
+								dd Description.
+								dt Project 2
+								dd Description. 
+					tr#resume 
+						td 
+							h2 Resume
+							dl 
+								dt Skills
+								dd 
+								| Why must they do that kick up litter or burrow under covers, 
+								| or leave hair everywhere, so attack feet. Hunt anything that moves. 
+								| Intently sniff hand chew iPad power cord, but leave dead animals as gifts. 
+								| Attack feet need to chase tail, and all of a sudden cat goes crazy, and stand in front of 
+								| the computer screen claw drapes. Why must they do that why must they do that, or chew foot, for hide 
+								| when guests come over. Rub face on everything favor packaging over toy, sleep on keyboard, for throwup 
+								| on your pillow. Sleep on keyboard use lap as chair always hungry or why must they do that, intrigued by the shower sun bathe. 
+								dt Other
+								dd
+								| Why must they do that kick up litter or burrow under covers, 
+								| or leave hair everywhere, so attack feet. Hunt anything that moves. 
+								| Intently sniff hand chew iPad power cord, but leave dead animals as gifts. 
+								| Attack feet need to chase tail, and all of a sudden cat goes crazy, and stand in front of 
+								| the computer screen claw drapes. Why must they do that why must they do that, or chew foot, for hide 
+								| when guests come over. Rub face on everything favor packaging over toy, sleep on keyboard, for throwup 
+								| on your pillow. Sleep on keyboard use lap as chair always hungry or why must they do that, intrigued by the shower sun bathe. 
+								dt PDF Here.
+					tr#contact
+						td
+							h2 Contact Me
+							dl 
+								dt One
+								dt Two
+								dt Three
+								dt
+								| Why must they do that kick up litter or burrow under covers, 
+								| or leave hair everywhere, so attack feet. Hunt anything that moves. 
+								| Intently sniff hand chew iPad power cord, but leave dead animals as gifts. 
+								| Attack feet need to chase tail, and all of a sudden cat goes crazy, and stand in front of 
+								| the computer screen claw drapes. Why must they do that why must they do that, or chew foot, for hide 
+								| when guests come over. Rub face on everything favor packaging over toy, sleep on keyboard, for throwup 
+								| on your pillow. Sleep on keyboard use lap as chair always hungry or why must they do that, intrigued by the shower sun bathe. 
+		script(type='text/javascript' src='vendors/jquery/dist/jquery.min.js')
+		script(type='text/javascript' src='scripts/layout.js')
+
