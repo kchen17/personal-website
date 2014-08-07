@@ -300,11 +300,6 @@ h2 {
   font-weight: bold;
 }
 
-.skills {
-  font-size: 0.8em;
-  margin-left: 10px;
-}
-
 dd {
   margin-left: 10px;
 }
@@ -321,6 +316,9 @@ dd {
   color: #a2a9af;
   border: solid;
   border-color: #a2a9af;
+}
+#projects > td > dl dd {
+  font-size: 0.8em;
 }
 @media (max-width: 900px) {
   #projects > td > dl {
@@ -365,6 +363,12 @@ dd {
 }
 #resume > td h2 {
   margin-bottom: 30px;
+}
+
+.skills {
+  font-size: 0.6em;
+  margin-left: 10px;
+  font-style: italic;
 }
 
 .space {

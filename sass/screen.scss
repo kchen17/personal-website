@@ -165,11 +165,6 @@ h2 {
   font-weight: bold;
 }
 
-.skills {
-  font-size: 0.8em;
-  margin-left: 10px;
-}
-
 dd {
   margin-left: 10px;
 }
@@ -184,6 +179,9 @@ dd {
   color: $gray;
   border: solid;
   border-color: $gray;
+  dd {
+    font-size: 0.8em;
+  }
   @include breakpoint($breakpoint-medium-width) {
     @include boxes(1/1, 30px);
     border: none;
@@ -203,12 +201,17 @@ dd {
       margin-left: 0px;
       font-size: 0.8em;
     }
-  
   }
   & h2 {
     margin-bottom: 30px;
   }
 
+}
+
+.skills {
+  font-size: 0.6em;
+  margin-left: 10px;
+  font-style: italic;
 }
 
 .space {
