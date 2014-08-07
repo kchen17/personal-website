@@ -196,6 +196,9 @@ dd {
     text-align: left;
     width: 50%;
     background-color: $linktp;
+    @include breakpoint($breakpoint-medium-width) {
+      width: 90%;
+    }
     dd {
       margin-left: 0px;
       font-size: 0.8em;
