@@ -184,7 +184,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #side #panel h2 {
     text-align: center;
     display: inherit;
-    z-index: 999;
+    z-index: 900;
     height: 5%;
     width: 100%;
     padding: 0px;
@@ -370,4 +370,9 @@ dd {
 .space {
   height: 400px;
   width: 300px;
+}
+
+a {
+  z-index: 999;
+  position: relative;
 }
