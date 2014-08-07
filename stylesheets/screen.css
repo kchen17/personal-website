@@ -67,6 +67,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   align($direction: both)
   cf()
 */
+/*
+@mixin rotate($deg, $mt, $ml) {
+  @include edit();
+  margin-top: $mt;
+  margin-left: $ml;
+  transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+}*/
 #side {
   font-family: "Antic Slab", "Georgia", serif;
   font-size: 1.8em;
@@ -277,8 +286,7 @@ dl {
   font-family: "Muli", "Trebuchet MS";
   font-size: 1em;
   color: #a2a9af;
-  text-align: justify;
-  line-height: 150%;
+  line-height: 140%;
   margin: -20px 20px 40px 0px;
   padding: 30px;
 }
@@ -317,8 +325,43 @@ dd {
   border: solid;
   border-color: #a2a9af;
 }
+#projects > td > dl .txt {
+  height: auto;
+  display: inline-block;
+}
 #projects > td > dl dd {
-  font-size: 0.8em;
+  font-size: 0.75em;
+}
+#projects > td > dl #pdcps {
+  background-image: url("../images/pdcps.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #pdclamp {
+  background-image: url("../images/pdclamp.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #tdchrome {
+  background-image: url("../images/tdchrome.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #mhacks {
+  background-image: url("../images/mhacks.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #wtl {
+  background-image: url("../images/wtl.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl .img {
+  background-image: url("../images/pdclamp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 52.95008%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-position: left top;
 }
 @media (max-width: 900px) {
   #projects > td > dl {
@@ -336,6 +379,7 @@ dd {
     box-sizing: border-box;
     padding: 30px;
     border: none;
+    height: auto;
   }
   #projects > td > dl:before, #projects > td > dl:after {
     content: '';
@@ -343,6 +387,17 @@ dd {
   }
   #projects > td > dl:after {
     clear: both;
+  }
+}
+@media (max-width: 400px) {
+  #projects > td > dl {
+    min-height: 150px;
+  }
+  #projects > td > dl .txt {
+    min-height: 50px;
+  }
+  #projects > td > dl .img {
+    padding-top: 150px;
   }
 }
 

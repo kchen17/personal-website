@@ -31,3 +31,12 @@ function openMenu() {
 
 };
 
+/*
+function checkSize () {
+	if (parseInt($('.img').css('padding-top')) > 350) {
+		$('.img').css('padding-top', '350px');
+	} else {
+		$('.img').css('padding-top', '52%');
+	}
+};*/
+

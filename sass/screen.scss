@@ -17,6 +17,7 @@
   color: $c;
 }
 
+/*
 @mixin rotate($deg, $mt, $ml) {
   @include edit();
   margin-top: $mt;
@@ -24,7 +25,23 @@
   transform: rotate($deg);
   -ms-transform: rotate($deg);
   -webkit-transform: rotate($deg);
+}*/
+
+@mixin insert($link) {
+  background-image: url($link);
+  background-repeat: no-repeat;
 }
+
+@mixin div-size($url) {     
+  background-image: url($url);     
+  background-size: contain;     
+  background-repeat: no-repeat;     
+  width: 100%;     
+  height: 0;     
+  padding-top: percentage(image-height($url) / image-width($url));
+}
+
+
 
 #side {
   @include font($panel-font, 1.8em, $gray);
@@ -33,7 +50,6 @@
   display: table;
   margin: 0 auto; 
   background: $gray;
-  //background-image: url('../images/tree.jpg');
   background-position: center top;
   background-size: cover;
   z-index: 600;
@@ -56,7 +72,6 @@
       display: none;
     }
     a.menu {
-      //text-shadow: 3px 1px white;
       font-weight: bold;
     }
     a.menu:link, a.menu:visited {
@@ -89,7 +104,6 @@
     .about, .projects, .resume, .contact {
       float: none;
       display: default;
-      //@include rotate(0deg, 0px, 0px);
       margin: 0; 
       width: 100%;
       text-align: center;
@@ -144,8 +158,7 @@ table {
 
 dl {
   @include font($body-font, 1em, $gray);
-  text-align: justify;
-  line-height: 150%;
+  line-height: 140%;
   margin: -20px 20px 40px 0px;
   padding: 30px;
   a:hover {
@@ -179,12 +192,47 @@ dd {
   color: $gray;
   border: solid;
   border-color: $gray;
+  .txt {
+    height: auto;
+    display: inline-block;
+  }
   dd {
-    font-size: 0.8em;
+    font-size: 0.75em;
+  }
+  #pdcps {
+    @include insert('../images/pdcps.png');
+  }
+  #pdclamp {
+    @include insert('../images/pdclamp.png');
+  }
+  #tdchrome {
+    @include insert('../images/tdchrome.png');
+  }
+  #mhacks {
+    @include insert('../images/mhacks.png');
+  }
+  #wtl {
+    @include insert('../images/wtl.png');
+  }
+  .img {
+    @include div-size('../images/pdclamp.png');
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-position: left top;
   }
   @include breakpoint($breakpoint-medium-width) {
     @include boxes(1/1, 30px);
     border: none;
+    height: auto;
+  }
+  @include breakpoint($breakpoint-small-width) {
+    min-height: 150px;
+    .txt {
+      min-height: 50px;
+    }
+    .img {
+      padding-top: 150px;
+    }
   }
 }
 
