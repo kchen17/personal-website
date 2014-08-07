@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 #side {
   font-family: "Antic Slab", "Georgia", serif;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #a2a9af;
   *zoom: 1;
   -webkit-box-sizing: border-box;
@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
   display: table;
   margin: 0 auto;
-  background-image: url("../images/tree.jpg");
+  background: #a2a9af;
   background-position: center top;
   background-size: cover;
   z-index: 600;
@@ -85,6 +85,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 100%;
   width: 20%;
   overflow-x: hidden;
+  text-align: center;
 }
 #side:before, #side:after {
   content: '';
@@ -92,49 +93,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 #side:after {
   clear: both;
-}
-#side .about {
-  margin-top: 40px;
-  margin-left: 30px;
-  transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-}
-#side .about * {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
-}
-#side .projects {
-  margin-top: 20px;
-  transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
-}
-#side .projects * {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
-}
-#side .resume {
-  margin-top: 70px;
-  margin-left: 75px;
-  transform: rotate(25deg);
-  -ms-transform: rotate(25deg);
-  -webkit-transform: rotate(25deg);
-}
-#side .resume * {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
-}
-#side .contact {
-  margin-top: 180px;
-  margin-left: 65px;
-  transform: rotate(-80deg);
-  -ms-transform: rotate(-80deg);
-  -webkit-transform: rotate(-80deg);
-}
-#side .contact * {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
 }
 #side #panel {
   -webkit-box-sizing: border-box;
@@ -145,11 +103,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   position: relative;
   z-index: 5;
-  line-height: 110%;
+  line-height: 130%;
+  margin-top: 170%;
 }
 #side #panel h2 {
   font-family: "Antic Slab", "Georgia", serif;
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: #a2a9af;
   display: none;
 }
@@ -163,7 +122,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #side #panel a.menu:hover {
   color: #c3e4ed;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   #side {
     *zoom: 1;
     float: left;
@@ -178,8 +137,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 10px;
-    background-image: none;
-    margin: 0;
+    background: transparent;
+    margin: 0 auto;
     padding: 0;
     vertical-align: middle;
     position: fixed;
@@ -206,25 +165,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #side .about, #side .projects, #side .resume, #side .contact {
     float: none;
     display: default;
-    transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
     margin: 0;
     width: 100%;
     text-align: center;
     font-family: "Antic Slab", "Georgia", serif;
-    font-size: 0.4em;
+    font-size: 0.5em;
     color: #a2a9af;
-  }
-  #side .about *, #side .projects *, #side .resume *, #side .contact * {
-    background: rgba(0, 0, 0, 0.05);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
   }
   #side .about a:link, #side .about a:visited, #side .projects a:link, #side .projects a:visited, #side .resume a:link, #side .resume a:visited, #side .contact a:link, #side .contact a:visited {
     color: white;
   }
   #side .about a:hover, #side .projects a:hover, #side .resume a:hover, #side .contact a:hover {
     background-color: white;
+  }
+  #side #panel {
+    margin: 0 auto;
   }
   #side #panel h2 {
     text-align: center;
@@ -241,7 +196,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
   }
   #side #panel h2 a:link, #side #panel h2 a:visited {
-    color: #3F3F3F;
+    color: #3f3f3f;
   }
   #side #panel h2 a:hover {
     color: white;
@@ -271,7 +226,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #container:after {
   clear: both;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   #container {
     *zoom: 1;
     float: left;
@@ -320,18 +275,94 @@ table:after {
 
 dl {
   font-family: "Muli", "Trebuchet MS";
-  font-size: 0.8em;
+  font-size: 1em;
   color: #a2a9af;
   text-align: justify;
   line-height: 150%;
   margin: -20px 20px 40px 0px;
   padding: 30px;
 }
+dl a:hover {
+  color: #c3e4ed;
+}
 
 h2 {
   font-family: "Dawning of a New Day", "Garamond";
-  font-size: 2em;
+  font-size: 2.2em;
   color: #6699cc;
   font-weight: bold;
+  margin-top: 5px;
   padding: 40px 30px 0 30px;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
+}
+
+.skills {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+dd {
+  margin-left: 10px;
+}
+
+#projects > td > dl {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 1%;
+  height: 500px;
+  width: 48%;
+  float: left;
+  color: #a2a9af;
+  border: solid;
+  border-color: #a2a9af;
+}
+@media (max-width: 900px) {
+  #projects > td > dl {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+    border: none;
+  }
+  #projects > td > dl:before, #projects > td > dl:after {
+    content: '';
+    display: table;
+  }
+  #projects > td > dl:after {
+    clear: both;
+  }
+}
+
+#resume > td dl {
+  margin-left: 5%;
+  text-align: left;
+  width: 50%;
+  background-color: rgba(102, 153, 204, 0.05);
+}
+#resume > td dl dd {
+  margin-left: 0px;
+  font-size: 0.8em;
+}
+#resume > td h2 {
+  margin-bottom: 30px;
+}
+
+.space {
+  height: 400px;
+  width: 300px;
 }

@@ -17,20 +17,23 @@
   color: $c;
 }
 
-@mixin rotate($deg) {
+@mixin rotate($deg, $mt, $ml) {
   @include edit();
+  margin-top: $mt;
+  margin-left: $ml;
   transform: rotate($deg);
   -ms-transform: rotate($deg);
   -webkit-transform: rotate($deg);
 }
 
 #side {
-  @include font($panel-font, 2em, $gray);
+  @include font($panel-font, 1.8em, $gray);
   @include cf();
   @include box-sizing(border-box);
   display: table;
   margin: 0 auto; 
-  background-image: url('../images/tree.jpg');
+  background: $gray;
+  //background-image: url('../images/tree.jpg');
   background-position: center top;
   background-size: cover;
   z-index: 600;
@@ -38,25 +41,7 @@
   height: 100%;
   width: 20%;
   overflow-x: hidden;
-  .about {
-    margin-top: 40px;
-    margin-left: 30px;
-    @include rotate(10deg);
-  }
-  .projects {
-    margin-top: 20px;
-    @include rotate(-10deg);
-  }
-  .resume {
-    margin-top: 70px;
-    margin-left: 75px;
-    @include rotate(25deg);
-  }
-  .contact {
-    margin-top: 180px;
-    margin-left: 65px;
-    @include rotate(-80deg);
-  }
+  text-align: center;
   #panel {
     @include box-sizing(border-box);
     display: table;
@@ -64,9 +49,10 @@
     width: 100%;
     position: relative;
     z-index: 5;
-    line-height: 110%; 
+    line-height: 130%; 
+    margin-top: 170%;
     h2 {
-      @include font($panel-font, 0.6em, $gray);
+      @include font($panel-font, 0.8em, $gray);
       display: none;
     }
     a.menu {
@@ -83,8 +69,8 @@
   }
   @include breakpoint($breakpoint-medium-width) {
     @include boxes(1/1, 10px);
-    background-image: none;
-    margin: 0;
+    background: transparent;
+    margin: 0 auto;
     padding: 0;
     vertical-align: middle;
     position: fixed;
@@ -103,11 +89,11 @@
     .about, .projects, .resume, .contact {
       float: none;
       display: default;
-      @include rotate(0deg);
+      //@include rotate(0deg, 0px, 0px);
       margin: 0; 
       width: 100%;
       text-align: center;
-      @include font($panel-font, 0.4em, $gray);
+      @include font($panel-font, 0.5em, $gray);
       a:link, a:visited {
         color: white;
       }
@@ -116,6 +102,7 @@
       }
     }
     #panel {
+      margin: 0 auto;
       h2 {
         text-align: center;
         display: inherit;
@@ -130,7 +117,7 @@
           text-decoration: none;
         }
         a:link, a:visited {
-          color: #3F3F3F;
+          color: $nav;
         }
         a:hover {
           color: white;
@@ -156,15 +143,72 @@ table {
 }
 
 dl {
-  @include font($body-font, 0.8em, $gray);
+  @include font($body-font, 1em, $gray);
   text-align: justify;
   line-height: 150%;
   margin: -20px 20px 40px 0px;
   padding: 30px;
+  a:hover {
+    color: $link-hover;
+  }
 }
 
 h2 {
-  @include font($header-font, 2em, $link);
+  @include font($header-font, 2.2em, $link);
   font-weight: bold;
+  margin-top: 5px;
   padding: 40px 30px 0 30px;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
+}
+
+.skills {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+dd {
+  margin-left: 10px;
+}
+
+#projects > td > dl {
+  @include box-sizing(border-box);
+  padding: 30px;
+  margin: 1%;
+  height: 500px;
+  width: 48%;
+  float: left;
+  color: $gray;
+  border: solid;
+  border-color: $gray;
+  @include breakpoint($breakpoint-medium-width) {
+    @include boxes(1/1, 30px);
+    border: none;
+  }
+}
+
+#resume > td {
+  & dl {
+    margin-left: 5%;
+    text-align: left;
+    width: 50%;
+    background-color: $linktp;
+    dd {
+      margin-left: 0px;
+      font-size: 0.8em;
+    }
+  
+  }
+  & h2 {
+    margin-bottom: 30px;
+  }
+
+}
+
+.space {
+  height: 400px;
+  width: 300px;
 }
