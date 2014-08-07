@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://kathleenchen.net/</loc>
+  <lastmod>2014-08-07T22:42:25+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/</loc>
+  <lastmod>2014-08-07T22:43:09+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/all</loc>
+  <lastmod>2014-08-07T22:43:09+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/project/do-browser-extension</loc>
+  <lastmod>2014-08-07T22:43:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/project/drupal-site-gregslist</loc>
+  <lastmod>2014-08-07T22:43:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/blog/data-security</loc>
+  <lastmod>2014-08-07T22:43:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/project/drupal-site-frog-finder</loc>
+  <lastmod>2014-08-07T22:43:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/project/lamp-blog</loc>
+  <lastmod>2014-08-07T22:43:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/portfolio</loc>
+  <lastmod>2014-08-07T22:43:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/jquery</loc>
+  <lastmod>2014-08-07T22:43:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/htmlcss</loc>
+  <lastmod>2014-08-07T22:43:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/angularjs</loc>
+  <lastmod>2014-08-07T22:43:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/drupal</loc>
+  <lastmod>2014-08-07T22:43:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/mysql</loc>
+  <lastmod>2014-08-07T22:43:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/php</loc>
+  <lastmod>2014-08-07T22:43:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/apache</loc>
+  <lastmod>2014-08-07T22:43:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/skills/git</loc>
+  <lastmod>2014-08-07T22:43:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://kathleenchen.net/portfolio/badge/pdc-badge</loc>
+  <lastmod>2014-08-07T22:43:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.51</priority>
+</url>
+</urlset>
