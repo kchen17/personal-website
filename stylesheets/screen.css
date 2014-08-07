@@ -86,7 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
   display: table;
   margin: 0 auto;
-  background: #a2a9af;
+  background-image: url(../images/side.png);
   background-position: center top;
   background-size: cover;
   z-index: 600;
@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 100%;
   width: 20%;
   overflow-x: hidden;
-  text-align: center;
+  text-align: right;
 }
 #side:before, #side:after {
   content: '';
@@ -113,7 +113,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
   z-index: 5;
   line-height: 130%;
-  margin-top: 170%;
+  margin-top: 20%;
+  margin-left: -20%;
 }
 #side #panel h2 {
   font-family: "Antic Slab", "Georgia", serif;

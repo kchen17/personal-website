@@ -49,7 +49,8 @@
   @include box-sizing(border-box);
   display: table;
   margin: 0 auto; 
-  background: $gray;
+  //background: $graytp;
+  background-image: url(../images/side.png);
   background-position: center top;
   background-size: cover;
   z-index: 600;
@@ -57,7 +58,7 @@
   height: 100%;
   width: 20%;
   overflow-x: hidden;
-  text-align: center;
+  text-align: right;
   #panel {
     @include box-sizing(border-box);
     display: table;
@@ -66,7 +67,8 @@
     position: relative;
     z-index: 5;
     line-height: 130%; 
-    margin-top: 170%;
+    margin-top: 20%;
+    margin-left: -20%;
     h2 {
       @include font($panel-font, 0.8em, $gray);
       display: none;
