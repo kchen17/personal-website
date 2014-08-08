@@ -17,16 +17,6 @@
   color: $c;
 }
 
-/*
-@mixin rotate($deg, $mt, $ml) {
-  @include edit();
-  margin-top: $mt;
-  margin-left: $ml;
-  transform: rotate($deg);
-  -ms-transform: rotate($deg);
-  -webkit-transform: rotate($deg);
-}*/
-
 @mixin insert($link) {
   background-image: url($link);
   background-repeat: no-repeat;
@@ -34,8 +24,7 @@
 
 @mixin div-size($url) {     
   background-image: url($url);     
-  background-size: contain;     
-  background-repeat: no-repeat;     
+  background-size: contain;        
   width: 100%;     
   height: 0;     
   padding-top: percentage(image-height($url) / image-width($url));
@@ -188,7 +177,7 @@ dd {
   @include box-sizing(border-box);
   padding: 30px;
   margin: 1%;
-  min-height: 500px;
+  height: 1100px;
   width: 48%;
   float: left;
   color: $gray;
@@ -217,10 +206,15 @@ dd {
     @include insert('../images/wtl.png');
   }
   .img {
-    @include div-size('../images/pdclamp.png');
     margin-bottom: 10px;
     margin-top: 10px;
-    background-position: left top;
+    @include div-size('../images/pdclamp.png');
+  }
+  @include breakpoint($breakpoint-huge-width) {
+    height: 750px;
+  }
+  @include breakpoint($breakpoint-large-width) {
+    height: 550px;
   }
   @include breakpoint($breakpoint-medium-width) {
     @include boxes(1/1, 30px);

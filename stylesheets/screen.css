@@ -67,15 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   align($direction: both)
   cf()
 */
-/*
-@mixin rotate($deg, $mt, $ml) {
-  @include edit();
-  margin-top: $mt;
-  margin-left: $ml;
-  transform: rotate($deg);
-  -ms-transform: rotate($deg);
-  -webkit-transform: rotate($deg);
-}*/
 #side {
   font-family: "Antic Slab", "Georgia", serif;
   font-size: 1.8em;
@@ -319,7 +310,7 @@ dd {
   box-sizing: border-box;
   padding: 30px;
   margin: 1%;
-  min-height: 500px;
+  height: 1100px;
   width: 48%;
   float: left;
   color: #a2a9af;
@@ -354,15 +345,23 @@ dd {
   background-repeat: no-repeat;
 }
 #projects > td > dl .img {
+  margin-bottom: 10px;
+  margin-top: 10px;
   background-image: url("../images/pdclamp.png");
   background-size: contain;
-  background-repeat: no-repeat;
   width: 100%;
   height: 0;
   padding-top: 52.95008%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-position: left top;
+}
+@media (max-width: 3400px) {
+  #projects > td > dl {
+    height: 750px;
+  }
+}
+@media (max-width: 1700px) {
+  #projects > td > dl {
+    height: 550px;
+  }
 }
 @media (max-width: 900px) {
   #projects > td > dl {
