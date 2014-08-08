@@ -319,7 +319,7 @@ dd {
   box-sizing: border-box;
   padding: 30px;
   margin: 1%;
-  height: 500px;
+  min-height: 500px;
   width: 48%;
   float: left;
   color: #a2a9af;
