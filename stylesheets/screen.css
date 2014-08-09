@@ -310,12 +310,10 @@ dd {
   box-sizing: border-box;
   padding: 30px;
   margin: 1%;
-  height: 1000px;
+  height: auto;
   width: 48%;
   float: left;
   color: #a2a9af;
-  border: solid;
-  border-color: #a2a9af;
 }
 #projects > td > dl .txt {
   height: auto;
@@ -353,14 +351,21 @@ dd {
   height: 0;
   padding-top: 52.95008%;
 }
-@media (max-width: 2400px) {
+@media (max-width: 2600px) {
   #projects > td > dl {
-    height: 625px;
+    height: 750px;
+    border: solid;
+    border-color: #a2a9af;
+  }
+}
+@media (max-width: 2000px) {
+  #projects > td > dl {
+    height: 650px;
   }
 }
 @media (max-width: 1700px) {
   #projects > td > dl {
-    height: 550px;
+    height: 560px;
   }
 }
 @media (max-width: 900px) {
@@ -439,4 +444,13 @@ dd {
 a {
   z-index: 999;
   position: relative;
+}
+
+body {
+  font-size: 2em;
+}
+@media (max-width: 2600px) {
+  body {
+    font-size: 1em;
+  }
 }

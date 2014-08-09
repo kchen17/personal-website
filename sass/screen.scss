@@ -177,12 +177,10 @@ dd {
   @include box-sizing(border-box);
   padding: 30px;
   margin: 1%;
-  height: 1000px;
+  height: auto;
   width: 48%;
   float: left;
   color: $gray;
-  border: solid;
-  border-color: $gray;
   .txt {
     height: auto;
     display: inline-block;
@@ -211,10 +209,15 @@ dd {
     @include div-size('../images/pdclamp.png');
   }
   @include breakpoint($breakpoint-huge-width) {
-    height: 625px;
+    height: 750px;
+    border: solid;
+    border-color: $gray;
   }
   @include breakpoint($breakpoint-large-width) {
-    height: 550px;
+    height: 650px;
+  }
+  @include breakpoint($breakpoint-normal-width) {
+    height: 560px;
   }
   @include breakpoint($breakpoint-medium-width) {
     @include boxes(1/1, 30px);
@@ -271,4 +274,11 @@ dd {
 a {
   z-index: 999;
   position: relative;
+}
+
+body {
+  font-size: 2em;
+  @include breakpoint($breakpoint-huge-width) {
+    font-size: 1em;
+  }
 }
