@@ -310,7 +310,7 @@ dd {
   box-sizing: border-box;
   padding: 30px;
   margin: 1%;
-  height: 1100px;
+  height: 1000px;
   width: 48%;
   float: left;
   color: #a2a9af;
@@ -353,9 +353,9 @@ dd {
   height: 0;
   padding-top: 52.95008%;
 }
-@media (max-width: 3400px) {
+@media (max-width: 2400px) {
   #projects > td > dl {
-    height: 750px;
+    height: 625px;
   }
 }
 @media (max-width: 1700px) {
