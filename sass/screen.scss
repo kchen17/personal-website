@@ -30,6 +30,11 @@
   padding-top: percentage(image-height($url) / image-width($url));
 }
 
+body {
+  @include breakpoint($breakpoint-small-width) {
+    overflow-x: hidden;
+  }
+}
 
 
 #side {
@@ -155,6 +160,10 @@ dl {
   a:hover {
     color: $link-hover;
   }
+  @include breakpoint($breakpoint-small-width) {
+    position: relative;
+    left: -10px;
+  }
 }
 
 h2 {
@@ -243,6 +252,11 @@ dd {
     background-color: $linktp;
     @include breakpoint($breakpoint-medium-width) {
       width: 90%;
+    }
+    @include breakpoint($breakpoint-small-width) {
+      width: 85%;
+      position: relative;
+      left: -5px;
     }
     dd {
       margin-left: 0px;

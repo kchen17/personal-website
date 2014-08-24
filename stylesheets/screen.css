@@ -67,6 +67,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   align($direction: both)
   cf()
 */
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 #side {
   font-family: "Antic Slab", "Georgia", serif;
   font-size: 1.8em;
@@ -285,6 +291,12 @@ dl {
 dl a:hover {
   color: #c3e4ed;
 }
+@media (max-width: 400px) {
+  dl {
+    position: relative;
+    left: -10px;
+  }
+}
 
 h2 {
   font-family: "Dawning of a New Day", "Garamond";
@@ -415,6 +427,13 @@ dd {
 @media (max-width: 900px) {
   #resume > td dl {
     width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  #resume > td dl {
+    width: 85%;
+    position: relative;
+    left: -5px;
   }
 }
 #resume > td dl dd {
