@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html> 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hello, I'm Kathleen Chen. I'm a sophomore at the University of Pennsylvania studying Computer Science and Biochemistry. I am interested in big data, biotech, and making cool things. My free time is spent reading, writing, and discussing social (human) issues with people during the most obscene hours of the night.">
-    <meta charset="UTF-8">
-    <title>Kathleen Chen</title>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-53641608-1', 'auto');
-    ga('send', 'pageview');
-
-    </script>
     <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/screen.css">
     <!--meta(http-equiv="refresh" content="5")-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hello, I'm Kathleen Chen. I'm a sophomore at the University of Pennsylvania studying Computer Science and Biochemistry. I am interested in big data, biotech, and making cool things. My free time is spent reading, writing, and discussing social (human) issues with people during the most obscene hours of the night.">
+    <title>Kathleen Chen</title>
   </head>
   <body>
     <div id="side" class="pull-left">
       <!-- links here-->
       <div id="panel" class="naver-container">
-        <h2><a href="#" onclick="return false;">NAVIGATION</a></h2>
+        <h2><a href="#" onclick="return false;">NAVIGATE</a></h2>
         <ul> 
           <li class="about"><a href="#about" class="menu">about</a></li>
           <li class="projects"><a href="#projects" class="menu">projects</a></li>
@@ -42,10 +31,9 @@
             <td> 
               <h2>Hello, I'm Kathleen Chen.</h2>
               <dl> 
-                <dt> </dt>I'm a sophomore at the University of Pennsylvania 
-                stepping into the tech space. As a student studying Computer Science and Biochemistry, 
-                I am interested in big data, biotech, and <a href="http://github.com/kchen17">making cool things</a>. I love to learn--whether it be through people, hacking, or tripping over my own mistakes.
-                My free time is spent <a href="http://eluviese.tumblr.com">reading, writing</a>, and discussing social (human) issues with people during the most obscene hours of the night.
+                <dt> </dt>I'm a junior at the University of Pennsylvania poking around the tech space.
+                Every now and then, I make some attempts to <a href="http://github.com/kchen17">build cool things</a>. As a student, my full-time job is to learn--often from textbooks, but more and more it is from talking, hacking, and/or eating with people much smarter than me.
+                Some days I like to <a href="http://mutedglass.tumblr.com">write</a>, but mostly, I am on the Internet for the <a href="http://www.cutecatgifs.com/wp-content/uploads/2015/05/hovercat.gif">cats</a>.
               </dl>
             </td>
           </tr>
@@ -53,21 +41,40 @@
             <td> 
               <h2>Projects</h2>
               <dl> 
-                <div id="pdcps" class="img"> </div>
+                <div id="yodel" class="img"></div>
                 <div class="txt">
                   <dt class="bold">
                      
-                    Philly Dev Camp: Portfolio Site 
+                    Yodel 
                   </dt>
-                  <dd class="skills">Drupal</dd>
+                  <dd class="skills">JavaScript, MongoDB</dd>
                   <dd>
-                    Created to learn Drupal's
-                    content management system and basic module building.  
-                    Taxonomy terms and badges linked to blog/project posts 
-                    track progress in honing specific skills.
-                    Custom theming not yet implemented.
+                    This was developed by a 3-person team at MHacks IV Fall 2014.
+                    I was responsible for the client-facing aspects of the browser 
+                    extension--that is, I implemented the functionality that allows a user
+                    to not only post their own comments, but also view and upvote/downvote existing comments.
+                    I also wrote the logic for serializing the data before it reached the database,
+                    as well as deserializing it when it needed to be rendered on the client-side.
                   </dd>
-                  <dt class="links">[<a href="https://github.com/kchen17/portfolio">source</a>, <a href="http://kathleenchen.net/portfolio">site</a>]</dt>
+                  <dt class="links">[<a href="https://github.com/syogesh/tsukomi">source</a>, <a href="http://devpost.com/software/yodel-anonymous-conversations-directly-on-webpages">challengepost submission</a>]</dt>
+                </div>
+              </dl>
+              <dl> 
+                <div id="phitcircle" class="img"></div>
+                <div class="txt">
+                  <dt class="bold">
+                     
+                    Philadelphia Health IT Circle 
+                  </dt>
+                  <dd class="skills">Drupal, PHP, HTML, Sass/CSS</dd>
+                  <dd>
+                    Commissioned by PHITCircle, a non-profit healthcare organization, 
+                    this site was developed by a 4-person team during the final week of Philly Dev Camp.
+                    My task was to build a custom theme for this multi-page website. The 
+                    layout is fully responsive (it is compatible on all screen sizes and devices)
+                    and formatted to suit the organization's branding. 
+                  </dd>
+                  <dt class="links">[<a href="http://phitcircle.org/">production site</a>]</dt>
                 </div>
               </dl>
               <dl>
@@ -81,20 +88,7 @@
                     Entries open for public submission/deletion. Grid layout, with 
                     very basic jQuery for zoom-in/-out option. 
                   </dd>
-                  <dt class="links">[<a href="https://github.com/kchen17/prelim-website">source</a>, <a href="http://edna.zivtech.com/kc">site</a>]</dt>
-                </div>
-              </dl>
-              <dl> 
-                <div id="tdchrome" class="img"></div>
-                <div class="txt">
-                  <dt class="bold">Chrome extension: To-do List</dt>
-                  <dd class="skills">HTML/CSS, jQuery, AngularJS</dd>
-                  <dd>
-                    Exploration of AngularJS: contains in-place
-                    edit, delete, and drag & drop options, ability to clear all/clear selection, 
-                    and pagination. Items saved in browser via DOM storage. 
-                  </dd>
-                  <dt class="links">[<a href="https://github.com/kchen17/todo-browser-ext">source</a>]</dt>
+                  <dt class="links">[<a href="https://github.com/kchen17/prelim-website">source</a>]</dt>
                 </div>
               </dl>
               <dl> 
@@ -126,7 +120,7 @@
                     allow for transition into new terrains without pause. Each member created a
                     mini-game as well, which appear based on environment.
                   </dd>
-                  <dt class="links">[<a href="http://challengepost.com/software/lost-moon">link</a>]</dt>
+                  <dt class="links">[<a href="http://challengepost.com/software/lost-moon">challengepost submission</a>]</dt>
                 </div>
               </dl>
             </td>
@@ -134,18 +128,17 @@
           <tr id="resume"> 
             <td> 
               <h2>Resume</h2>
+              <dl>Technology Summer Analyst, Goldman Sachs </dl>
               <dl>Developer Intern, Advanced Automation Group, LLC. </dl>
               <dl>
                  
                 Assistant Programmer, Hogenesch Genomics Lab <br>(University of Pennsylvania)
               </dl>
-              <dl>Student Researcher, Tech Full Electric Co., LTD.</dl>
-              <dl>MERIT Program Volunteer Coordinator, Henry Ford Hospital</dl>
               <dl> 
                 <dt>Technical </dt>
                 <dd>OS/Platforms: Windows XP & 7, Mac OS X, Unix, Linux</dd>
-                <dd>Proficient: Java, Python, R, HTML/CSS</dd>
-                <dd>Moderate: PHP, JavaScript, SQL, Matlab, OCaml</dd>
+                <dd>Proficient: Java, JavaScript, Python, R</dd>
+                <dd>Moderate: PHP, SQL, Matlab, OCaml</dd>
               </dl>
               <dl> 
                 <dt> <a href="https://www.dropbox.com/s/m1o73gh6bwnyuau/KathleenChen.pdf">Download Resume</a></dt>
@@ -157,7 +150,7 @@
               <h2>Contact Me</h2>
               <dl> 
                 <dt> </dt>Send me a <a href="mailto:chen.kathleenm@gmail.com">message</a>!  
-                <dt></dt>You can also find me on <a href="http://github.com/kchen17">github</a>, <a href="https://www.facebook.com/kathy.chen95">facebook</a>, <a href="http://www.linkedin.com/pub/kathleen-chen/92/3aa/5a3">linkedin</a>, and <a href="http://eluviese.tumblr.com">tumblr</a>.
+                <dt></dt>You can also find me on <a href="http://github.com/kchen17">github</a>, <a href="https://www.facebook.com/kathy.chen95">facebook</a>, <a href="http://www.linkedin.com/pub/kathleen-chen/92/3aa/5a3">linkedin</a>, and <a href="http://mutedglass.tumblr.com">tumblr</a>.
               </dl>
               <dl class="space"></dl>
             </td>

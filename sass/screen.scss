@@ -212,6 +212,12 @@ dd {
   #wtl {
     @include insert('../images/wtl.png');
   }
+  #yodel {
+    @include insert('../images/yodel.png');
+  }
+  #phitcircle {
+    @include insert('../images/phitcircle.png');
+  }
   .img {
     margin-bottom: 10px;
     margin-top: 10px;

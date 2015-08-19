@@ -15,7 +15,7 @@ html
 			// links here
 			.naver-container#panel
 				h2
-					a(href="#" onclick="return false;") NAVIGATION
+					a(href="#" onclick="return false;") NAVIGATE
 				ul 
 					- var tags = ["about", "projects", "resume", "contact"];
 					- each tag, id in tags
@@ -30,19 +30,56 @@ html
 							h2 Hello, I'm Kathleen Chen.
 							dl 
 								dt 
-								| I'm a sophomore at the University of Pennsylvania 
-								| stepping into the tech space. As a student studying Computer Science and Biochemistry, 
-								| I am interested in big data, biotech, and 
-								a(href="http://github.com/kchen17") making cool things
-								| . I love to learn--whether it be through people, hacking, or tripping over my own mistakes.
-								| My free time is spent 
-								a(href="http://eluviese.tumblr.com") reading, writing
-								| , and discussing social (human) issues with people during the most obscene hours of the night.
+								| I'm a junior at the University of Pennsylvania poking around the tech space.
+								| Every now and then, I make some attempts to 
+								a(href="http://github.com/kchen17") build cool things
+								| . As a student, my full-time job is to learn--often from textbooks, but more and more it is from talking, hacking, and/or eating with people much smarter than me.
+								| Some days I like to 
+								a(href="http://mutedglass.tumblr.com") write
+								| , but mostly, I am on the Internet for the 
+								a(href="http://www.cutecatgifs.com/wp-content/uploads/2015/05/hovercat.gif") cats
+								| .
 								
 					tr#projects
 						td 
 							h2 Projects
+							
 							dl 
+								.img#yodel
+								.txt
+									dt.bold 
+										| Yodel 
+									dd.skills JavaScript, MongoDB
+									dd
+										| This was developed by a 3-person team at MHacks IV Fall 2014.
+										| I was responsible for the client-facing aspects of the browser 
+										| extension--that is, I implemented the functionality that allows a user
+										| to not only post their own comments, but also view and upvote/downvote existing comments.
+										| I also wrote the logic for serializing the data before it reached the database,
+										| as well as deserializing it when it needed to be rendered on the client-side.
+									dt.links
+										| [
+										a(href="https://github.com/syogesh/tsukomi") source
+										| , 
+										a(href="http://devpost.com/software/yodel-anonymous-conversations-directly-on-webpages") challengepost submission
+										| ]
+							dl 
+								.img#phitcircle
+								.txt
+									dt.bold 
+										| Philadelphia Health IT Circle 
+									dd.skills Drupal, PHP, HTML, Sass/CSS
+									dd
+										| Commissioned by PHITCircle, a non-profit healthcare organization, 
+										| this site was developed by a 4-person team during the final week of Philly Dev Camp.
+										| My task was to build a custom theme for this multi-page website. The 
+										| layout is fully responsive (it is compatible on all screen sizes and devices)
+										| and formatted to suit the organization's branding. 
+									dt.links
+										| [
+										a(href="http://phitcircle.org/") production site
+										| ]
+							//- dl 
 								.img#pdcps 
 								.txt
 									dt.bold 
@@ -73,10 +110,8 @@ html
 									dt.links
 										| [
 										a(href="https://github.com/kchen17/prelim-website") source
-										| , 
-										a(href="http://edna.zivtech.com/kc") site
 										| ]
-							dl 
+							//- dl 
 								.img#tdchrome
 								.txt
 									dt.bold Chrome extension: To-do List
@@ -118,23 +153,22 @@ html
 										| mini-game as well, which appear based on environment.
 									dt.links
 										| [
-										a(href="http://challengepost.com/software/lost-moon") link
+										a(href="http://challengepost.com/software/lost-moon") challengepost submission
 										| ]
 					tr#resume 
 						td 
 							h2 Resume
+							dl Technology Summer Analyst, Goldman Sachs 
 							dl Developer Intern, Advanced Automation Group, LLC. 
 							dl 
 								| Assistant Programmer, Hogenesch Genomics Lab 
 								br 
 								| (University of Pennsylvania)
-							dl Student Researcher, Tech Full Electric Co., LTD.
-							dl MERIT Program Volunteer Coordinator, Henry Ford Hospital
 							dl 
 								dt Technical 
 								dd OS/Platforms: Windows XP & 7, Mac OS X, Unix, Linux
-								dd Proficient: Java, Python, R, HTML/CSS
-								dd Moderate: PHP, JavaScript, SQL, Matlab, OCaml
+								dd Proficient: Java, JavaScript, Python, R
+								dd Moderate: PHP, SQL, Matlab, OCaml
 							dl 
 								dt 
 									a(href="https://www.dropbox.com/s/m1o73gh6bwnyuau/KathleenChen.pdf") Download Resume
@@ -154,7 +188,7 @@ html
 								| , 
 								a(href="http://www.linkedin.com/pub/kathleen-chen/92/3aa/5a3") linkedin
 								| , and 
-								a(href="http://eluviese.tumblr.com") tumblr
+								a(href="http://mutedglass.tumblr.com") tumblr
 								| .
 							dl.space
 		script(type='text/javascript' src='vendors/jquery/dist/jquery.min.js')
