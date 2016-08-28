@@ -1,5 +1,6 @@
+//output:index.html
 doctype html
-html 
+html
 	head
 		link(href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css')
 		link(href='http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css')
@@ -8,7 +9,7 @@ html
 		link(rel='stylesheet' href='stylesheets/screen.css')
 		//meta(http-equiv="refresh" content="5")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		meta(name="description" content="Hello, I'm Kathleen Chen. I'm a sophomore at the University of Pennsylvania studying Computer Science and Biochemistry. I am interested in big data, biotech, and making cool things. My free time is spent reading, writing, and discussing social (human) issues with people during the most obscene hours of the night.")
+		meta(name="description" content="Hello, I'm Kathy! I'm a senior at the University of Pennsylvania studying Computer Science and Biochemistry. I am interested in big data, biotech, and making cool things. My free time is spent reading, writing, and discussing social (human) issues with people during the most obscene hours of the night.")
 		title Kathleen Chen
 	body
 		.pull-left#side
@@ -16,43 +17,47 @@ html
 			.naver-container#panel
 				h2
 					a(href="#" onclick="return false;") NAVIGATE
-				ul 
+				ul
 					- var tags = ["about", "projects", "resume", "contact"];
 					- each tag, id in tags
 						- var idtag = "#" + tag;
 						li(class=tag): a.menu(href=idtag) #{tag}
 
-		.pull-right#container 
+		.pull-right#container
 			table(class="table table-striped center-block")
 				tbody
-					tr#about 
-						td 
-							h2 Hello, I'm Kathleen Chen.
-							dl 
-								dt 
-								| I'm a junior at the University of Pennsylvania poking around the tech space.
+					tr#about
+						td
+							h2 Hello, I'm Kathy!
+							dl
+								dt
+								| I'm a senior at the University of Pennsylvania poking around the tech space.
 								| Every now and then, I make some attempts to 
 								a(href="http://github.com/kchen17") build cool things
 								| . As a student, my full-time job is to learn--often from textbooks, but more and more it is from talking, hacking, and/or eating with people much smarter than me.
-								| Some days I like to 
-								a(href="http://mutedglass.tumblr.com") write
-								| , but mostly, I am on the Internet for the 
+								br
+								br
+								| I work at a 
+								a(href="http://www.greenelab.com/") computational genomics lab
+								|  and TA a few CS classes (currently: a Haskell mini-course and a machine learning course) 
+								| during the school year. My free moments are usually dedicated to revisiting good movies/TV shows (Friends!), tracking down great coffee and even better cake, and wandering around Philadelphia to admire the art (also to gape at the tiny dogs).
+								| When I am not woefully struggling to keep this site up-to-date, I am on the Internet for the 
 								a(href="http://www.cutecatgifs.com/wp-content/uploads/2015/05/hovercat.gif") cats
 								| .
-								
+
 					tr#projects
-						td 
+						td
 							h2 Projects
-							
-							dl 
+
+							dl
 								.img#yodel
 								.txt
-									dt.bold 
-										| Yodel 
+									dt.bold
+										| Yodel
 									dd.skills JavaScript, MongoDB
 									dd
 										| This was developed by a 3-person team at MHacks IV Fall 2014.
-										| I was responsible for the client-facing aspects of the browser 
+										| I was responsible for the client-facing aspects of the browser
 										| extension--that is, I implemented the functionality that allows a user
 										| to not only post their own comments, but also view and upvote/downvote existing comments.
 										| I also wrote the logic for serializing the data before it reached the database,
@@ -60,126 +65,131 @@ html
 									dt.links
 										| [
 										a(href="https://github.com/syogesh/tsukomi") source
-										| , 
+										| ,
 										a(href="http://devpost.com/software/yodel-anonymous-conversations-directly-on-webpages") challengepost submission
 										| ]
-							dl 
+							dl
 								.img#phitcircle
 								.txt
-									dt.bold 
-										| Philadelphia Health IT Circle 
+									dt.bold
+										| Philadelphia Health IT Circle
 									dd.skills Drupal, PHP, HTML, Sass/CSS
 									dd
-										| Commissioned by PHITCircle, a non-profit healthcare organization, 
+										| Commissioned by PHITCircle, a non-profit healthcare organization,
 										| this site was developed by a 4-person team during the final week of Philly Dev Camp.
-										| My task was to build a custom theme for this multi-page website. The 
+										| My task was to build a custom theme for this multi-page website. The
 										| layout is fully responsive (it is compatible on all screen sizes and devices)
-										| and formatted to suit the organization's branding. 
+										| and formatted to suit the organization's branding.
 									dt.links
 										| [
 										a(href="http://phitcircle.org/") production site
 										| ]
-							//- dl 
-								.img#pdcps 
+							//- dl
+								.img#pdcps
 								.txt
-									dt.bold 
-										| Philly Dev Camp: Portfolio Site 
+									dt.bold
+										| Philly Dev Camp: Portfolio Site
 									dd.skills Drupal
 									dd
 										| Created to learn Drupal's
-										| content management system and basic module building.  
-										| Taxonomy terms and badges linked to blog/project posts 
+										| content management system and basic module building.
+										| Taxonomy terms and badges linked to blog/project posts
 										| track progress in honing specific skills.
 										| Custom theming not yet implemented.
 									dt.links
 										| [
 										a(href="https://github.com/kchen17/portfolio") source
-										| , 
+										| ,
 										a(href="http://kathleenchen.net/portfolio") site
 										| ]
-								
-							dl
+
+							//- dl
 								.img#pdclamp
 								.txt
 									dt.bold Philly Dev Camp: LAMP "Blog" Site
 									dd.skills HTML/CSS, jQuery, PHP, MySQL, Apache
-									dd 
-										| An exercise in PHP and database management. 
-										| Entries open for public submission/deletion. Grid layout, with 
-										| very basic jQuery for zoom-in/-out option. 
+									dd
+										| An exercise in PHP and database management.
+										| Entries open for public submission/deletion. Grid layout, with
+										| very basic jQuery for zoom-in/-out option.
 									dt.links
 										| [
 										a(href="https://github.com/kchen17/prelim-website") source
 										| ]
-							//- dl 
+							//- dl
 								.img#tdchrome
 								.txt
 									dt.bold Chrome extension: To-do List
 									dd.skills HTML/CSS, jQuery, AngularJS
 									dd
 										| Exploration of AngularJS: contains in-place
-										| edit, delete, and drag & drop options, ability to clear all/clear selection, 
-										| and pagination. Items saved in browser via DOM storage. 
+										| edit, delete, and drag & drop options, ability to clear all/clear selection,
+										| and pagination. Items saved in browser via DOM storage.
 									dt.links
 										| [
 										a(href="https://github.com/kchen17/todo-browser-ext") source
 										| ]
-							dl 
+							dl
 								.img#wtl
 								.txt
 									dt.bold Game: Walk the Line (2-D scrolling, platform)
 									dd.skills Java, OOP
-									dd 
-										| Objective is to traverse lines of an entire poem, avoid 
+									dd
+										| Objective is to traverse lines of an entire poem, avoid
 										| dying, and accumulate as many points as possible. Tiles
-										| generated with ASCII map showing where 
+										| generated with ASCII map showing where
 										| a poem should be "cut"; enemies can detect player's relative position
-										| after an attack; player has a fatigue mode triggered for a set time when 
-										| ammo needs "reloading."  
+										| after an attack; player has a fatigue mode triggered for a set time when
+										| ammo needs "reloading."
 									dt.links
 										| [
 										a(href="https://github.com/kchen17/CIS120-Proj") source
 										| ]
 
-							dl 
+							//- dl
 								.img#mhacks
-								.txt 
-									dt.bold Game: Lost Moon (2-D scrolling, platform, multi-environment, mini-games) 
+								.txt
+									dt.bold Game: Lost Moon (2-D scrolling, platform, multi-environment, mini-games)
 									dd.skills Python, OOP
-									dd 
+									dd
 										| Uses PyGame; written by 4-person team during MHacks 2013 just for fun. Objective
-										| is to simply fight monsters and survive. I programmed zone detection to 
+										| is to simply fight monsters and survive. I programmed zone detection to
 										| allow for transition into new terrains without pause. Each member created a
 										| mini-game as well, which appear based on environment.
 									dt.links
 										| [
 										a(href="http://challengepost.com/software/lost-moon") challengepost submission
 										| ]
-					tr#resume 
-						td 
+					tr#resume
+						td
 							h2 Resume
-							dl Technology Summer Analyst, Goldman Sachs 
-							dl Developer Intern, Advanced Automation Group, LLC. 
 							dl 
-								| Assistant Programmer, Hogenesch Genomics Lab 
-								br 
-								| (University of Pennsylvania)
+								| Software Engineering Intern, 
+								a(href="https://www.mongodb.com/") MongoDB
+								|  performance team (2016)
 							dl 
-								dt Technical 
-								dd OS/Platforms: Windows XP & 7, Mac OS X, Unix, Linux
-								dd Proficient: Java, JavaScript, Python, R
-								dd Moderate: PHP, SQL, Matlab, OCaml
+								a(href="http://hackny.org/2016/06/announcing-the-class-of-2016-hackny-fellows/") hackNY Fellow 
+								| (2016)
 							dl 
-								dt 
+								| Technology Summer Analyst, 
+								a(href="http://www.goldmansachs.com/careers/why-goldman-sachs/our-divisions/technology/") Goldman Sachs
+								|  (2015)
+							dl 
+								a(href="http://upibi.org/") Penn IBI 
+								| Undergraduate Research Fellow, 
+								a(href="http://www.greenelab.com/lab-members") Greene Lab
+								|  (2015-present)
+							dl
+								dt
 									a(href="https://www.dropbox.com/s/m1o73gh6bwnyuau/KathleenChen.pdf") Download Resume
 					tr#contact
 						td
 							h2 Contact Me
-							dl 
-								dt 
+							dl
+								dt
 								| Send me a 
 								a(href="mailto:chen.kathleenm@gmail.com") message
-								| !  
+								| !
 								dt
 								| You can also find me on 
 								a(href="http://github.com/kchen17") github
@@ -188,9 +198,8 @@ html
 								| , 
 								a(href="http://www.linkedin.com/pub/kathleen-chen/92/3aa/5a3") linkedin
 								| , and 
-								a(href="http://mutedglass.tumblr.com") tumblr
+								a(href="https://twitter.com/kathemeral") twitter
 								| .
 							dl.space
 		script(type='text/javascript' src='vendors/jquery/dist/jquery.min.js')
 		script(type='text/javascript' src='scripts/layout.js')
-
