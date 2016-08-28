@@ -48,7 +48,31 @@ html
 					tr#projects
 						td
 							h2 Projects
-
+							dl
+								.img#cis519
+								.txt
+									dt.bold
+										| Topic Modeling: A Deep Learning Approach
+									dd.skills Python (theano, scikit-learn, nltk)
+									dd
+										| Leverages the Yelp Academic Dataset to answer the question: do topics commonly discussed in restaurant reviews differ by region?
+										| I was responsible for learning the specifics of the Theano deep learning classifier we wanted to use and then modifying the implementation to work with our input data and intended analysis. I also wrote a lot of the data pre-processing code (i.e. functions to filter data by location and restaurant type) and the post-processing extraction of topic "nouns" using nltk. 
+									dt.links
+										| [
+										a(href="https://www.dropbox.com/s/jvu08o4pp82wjuo/paper-cis519.pdf?dl=0") research paper
+										| , 
+										a(href="https://www.dropbox.com/s/e53udforeplhtry/summary-ChenChenLee.pdf?dl=0") poster
+										| ]
+							dl
+								.img#pwanalysis
+								.txt
+									dt.bold
+										| Designing a pathway-pathway interaction network
+									dd.skills Python (pandas), R
+									dd
+										| The 
+										a(href="http://www.greenelab.com/") Greene Lab
+										|  has recently developed and published a method called ADAGE that performs unsupervised integration of diverse biological experiments. ADAGE is completely data-driven, as opposed to knowledge-driven: the relationships that it discovers are not conditioned on prior knowledge. The goal of my project is to use this property of the model to identify curated pathways that frequently co-occur or exhibit mutual exclusivity. (For example, we'd expect oxidative phosphorylation and fermentation to exhibit exclusivity relationships, regulated by oxygen in opposite directions.)
 							dl
 								.img#yodel
 								.txt
@@ -65,7 +89,7 @@ html
 									dt.links
 										| [
 										a(href="https://github.com/syogesh/tsukomi") source
-										| ,
+										| , 
 										a(href="http://devpost.com/software/yodel-anonymous-conversations-directly-on-webpages") challengepost submission
 										| ]
 							dl

@@ -362,6 +362,14 @@ dd {
   background-image: url("../images/phitcircle.png");
   background-repeat: no-repeat;
 }
+#projects > td > dl #cis519 {
+  background-image: url("../images/cis519.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #pwanalysis {
+  background-image: url("../images/pwanalysis.png");
+  background-repeat: no-repeat;
+}
 #projects > td > dl .img {
   margin-bottom: 10px;
   margin-top: 10px;
